@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 25px;
+}
+.container{
+  width: 990px;
+  display: flex;
+  justify-content:space-between;
+
+}
+
+.menu,
+.title_name,
+.contato{
+  flex: 1;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.menuMobile{
+  display: block;
+  text-align: center;
+}
+.mm_line{
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+}
+.title_name{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.name{
+  font-size: 40px;
+  font-family: "Karma",serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.contato{
+display: flex;
+justify-content: end;
+align-items: center;
+}
+.title_contato{
+  font-size: 25px;
+  font-family: "Karma",serif;
+  padding-right: 20px;
+ 
+}
+.title_contato a{
+  color: black;
+  text-decoration: none;
+}
+.title_food{
+  font-family: "Karma",serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    letter-spacing: 2px;
+
+}
+.foods{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+article{
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  
+}
+
+.thumb_food img{
+  width: 100%;
+  height: 325px;
+  margin-top: 25px;
+ 
+}
+.thumb_food img:hover{
+  transform: scale(1.02);
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.493);
+}
+article .name_food{
+  margin-top: 25px;
+  font-family: "Karma",serif;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 2px;
+  
+}
+article .desc_food{
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav_pag{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+}
+button{
+  padding: 10px;
+  margin: 2px;
+  border: none;
+}
+
+button a{
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+a button.active,
+button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+hr{
+  margin: 20px 10px;
+}
+
+.title_photor{
+  display: flex;
+  justify-content: center;
+}
+.title_photor h2{
+  font-family: "Karma",serif;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 30px 0px 20px 0px;
+}
+.photo{
+  display: flex;
+  justify-content: center;
+}
+
+.banner{
+justify-content: center;
+height: 450px;
+}
+.banner img{
+  height: auto;
+}
+#photor {
+  text-align: center;
+}
+.desc_photor{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title{
+margin: 20px 0px 10px 0px;
+font-family: "Karma",serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.sub_title{
+  font-family: "Karma",serif;
+  font-size: 22px;
+
+}
+.footer_photor p{
+  font-size: 18px;
+margin: 20px 0px;
+line-height: 25px;
+}
+.footer_location{
+  display: flex;
+  justify-content: center;
+}
+.location{
+display: flex;
+height: 500px;
+background-color: aqua;
+flex: 1;
+}
+.map{
+  flex: 1;
+background-color: yellow;
+}
+.form{
+  flex: 1;
+  background-color: green;
+}
