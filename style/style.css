@@ -1,217 +1,342 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
-header{
+
+main {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header {
   display: flex;
   justify-content: center;
   background-color: white;
   margin-top: 25px;
 }
-.container{
+
+.container {
   width: 990px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 
 }
 
 .menu,
 .title_name,
-.contato{
+.contato {
   flex: 1;
 }
-.menu{
+
+.menu {
   display: flex;
   align-items: center;
   padding-left: 5px;
 }
-.menuMobile{
+
+.menuMobile {
   display: block;
   text-align: center;
 }
-.mm_line{
+
+.mm_line {
   background-color: black;
   width: 30px;
   height: 5px;
   margin: 5px;
 }
-.title_name{
-display: flex;
-justify-content: center;
-align-items: center;
+
+.title_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.name{
+
+.name {
   font-size: 40px;
-  font-family: "Karma",serif;
+  font-family: "Karma", serif;
   font-weight: 500;
   letter-spacing: 2px;
 }
-.contato{
-display: flex;
-justify-content: end;
-align-items: center;
+
+.contato {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
-.title_contato{
+
+.title_contato {
   font-size: 25px;
-  font-family: "Karma",serif;
+  font-family: "Karma", serif;
   padding-right: 20px;
- 
+
 }
-.title_contato a{
+
+.title_contato a {
   color: black;
   text-decoration: none;
 }
-.title_food{
-  font-family: "Karma",serif;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 550;
-    letter-spacing: 2px;
+
+.title_food {
+  font-family: "Karma", serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 2px;
 
 }
-.foods{
+
+.foods {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  
+
 }
-article{
+
+article {
   flex: 1;
   min-width: 200px;
   margin-right: 20px;
-  
+
 }
 
-.thumb_food img{
+.thumb_food img {
   width: 100%;
   height: 325px;
   margin-top: 25px;
- 
+
 }
-.thumb_food img:hover{
+
+.thumb_food img:hover {
   transform: scale(1.02);
   border-radius: 10px;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.493);
 }
-article .name_food{
+
+article .name_food {
   margin-top: 25px;
-  font-family: "Karma",serif;
+  font-family: "Karma", serif;
   font-size: 28px;
   text-align: center;
   letter-spacing: 2px;
-  
+
 }
-article .desc_food{
+
+article .desc_food {
   margin-top: 25px;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 70px;
 }
+.desc_food_price{
+  margin-top: 50px;
+}
 
-.flex{
+.flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.nav_pag{
+.nav_pag {
   display: flex;
   justify-content: center;
   padding: 20px;
   margin-bottom: 20px;
-  
+
 }
-button{
+
+button {
   padding: 10px;
   margin: 2px;
   border: none;
 }
 
-button a{
+button a {
   color: black;
   text-decoration: none;
   background-color: white;
 }
+
 a button.active,
-button:hover{
+button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
-hr{
+
+hr {
   margin: 20px 10px;
 }
 
-.title_photor{
+.title_photor {
   display: flex;
   justify-content: center;
 }
-.title_photor h2{
-  font-family: "Karma",serif;
+
+.title_photor h2 {
+  font-family: "Karma", serif;
   font-size: 30px;
   text-align: center;
   letter-spacing: 2px;
   margin: 30px 0px 20px 0px;
 }
-.photo{
+
+.photo {
   display: flex;
   justify-content: center;
 }
 
-.banner{
-justify-content: center;
-height: 450px;
+.banner {
+  justify-content: center;
+  height: 450px;
 }
-.banner img{
+
+.banner img {
   height: auto;
 }
+
 #photor {
   text-align: center;
 }
-.desc_photor{
+
+.desc_photor {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.title{
-margin: 20px 0px 10px 0px;
-font-family: "Karma",serif;
+.title {
+  margin: 20px 0px 10px 0px;
+  font-family: "Karma", serif;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 2px;
 }
-.sub_title{
-  font-family: "Karma",serif;
+
+.sub_title {
+  font-family: "Karma", serif;
   font-size: 22px;
 
 }
-.footer_photor p{
+
+.footer_photor p {
   font-size: 18px;
-margin: 20px 0px;
-line-height: 25px;
+  margin: 20px 0px;
+  line-height: 25px;
+  text-align: center;
 }
-.footer_location{
+
+.section_location {
   display: flex;
   justify-content: center;
 }
-.location{
-display: flex;
-height: 500px;
-background-color: aqua;
-flex: 1;
+
+.contact h2 {
+
+  font-family: "Karma", serif;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 30px 0px 20px 0px;
+}
+
+.contact_area {
+  display: flex;
+}
+
+.contact_social {
+  flex: 1;
+}
+
+.contact_social {
+  padding: 30px;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.contact_item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.contact_form {
+  flex: 1;
+}
+
+.form_area {
+  padding: 30px;
+}
+
+.section_form {
+  display: flex;
+}
+
+.section_form input:first-child {
+  margin-right: 10px;
+}
+
+.section_form input {
+  padding: 10px;
+  outline: none;
+}
+
+input.message {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+.button{
+  display: flex;
+  justify-content: end;
+}
+.form_area input[type=submit] {
+  padding: 8px 16px;
+  margin-top: 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form_area input[type=submit]:hover{
+  background-color: #999999;
+  color: black;
 }
 .map{
-  flex: 1;
-background-color: yellow;
+  background-image: url('../assets/images/map.jpg');
+  background-position: center top;
+  background-size: cover;
+  height: 400px;
 }
-.form{
-  flex: 1;
-  background-color: green;
+footer{
+  background-color: black;
+  color: white;
+}
+footer p{
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+footer a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
